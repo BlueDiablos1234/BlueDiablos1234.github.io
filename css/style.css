@@ -1,0 +1,103 @@
+html, body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Noto Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  border-radius: 25px;
+  padding: 15px; 
+  /* background-color: rgba(0,0,0,0.5); */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.data {
+  font-size: 26px;
+}
+
+.idk {
+  z-index: 1;
+  width: 50%;
+  background-color: rgba(0,0,0,0.75);
+  padding: 15px;
+  border-radius: 25px
+}
+
+.metadata {
+  color: #5a5a5a;
+  font-size: small;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 155px;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 0 0 25px 0;
+  padding: 15px;
+}
+
+.red {
+  color: #FF2D00;
+}
+
+.orange {
+  color: #FF8C00;
+}
+
+.blue { 
+  color: #3498DB;
+}
+
+body {
+  background: linear-gradient(316deg, #000000, #160000, #130018, #000000, #080027, #000000);
+  background-size: 1400% 1400%;
+
+  -webkit-animation: backgroundGradient 10s ease infinite;
+  -moz-animation: backgroundGradient 10s ease infinite;
+  -o-animation: backgroundGradient 10s ease infinite;
+  animation: backgroundGradient 10s ease infinite;
+}
+
+@-webkit-keyframes backgroundGradient {
+  0%{background-position:0 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0 50%}
+}
+
+@-moz-keyframes backgroundGradient {
+  0%{background-position:0 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0 50%}
+}
+
+@-o-keyframes backgroundGradient {
+  0%{background-position:0 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0 50%}
+}
+
+@keyframes backgroundGradient {
+  0%{background-position:0 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0 50%}
+}
+
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
