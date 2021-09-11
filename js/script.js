@@ -237,6 +237,10 @@ function setMainObj(force = false, dat) {
             setMainTimer(eventDate);
             courseCod.innerHTML = i[0]
             courseDat.innerHTML = i[1]
+            document.getElementById('fscode2').innerHTML = i[0]
+            document.getElementById('fscode').innerHTML = i[0]
+            document.getElementById('fscourse').innerHTML = i[1]
+            document.getElementById('fscourse2').innerHTML = i[1]
           };
           break;
       }
