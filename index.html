@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="min-h-screen sm:py-6 flex sm:justify-center flex-col">
+    <div id="main_cont" class="min-h-screen sm:py-6 flex sm:justify-center flex-col">
         <div class="relative sm:max-w-xl sm:mx-auto  z-10">
             <div
                 class="relative px-4 py-10 bg-black text-white shadow-lg sm:rounded-xl sm:p-12 h-screen sm:h-full w-md">
@@ -46,7 +46,8 @@
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 p-5 text-sm bg-black text-white rounded-tr-3xl z-10 bg-gray-900 text-gray-500">
+        <div
+            class="absolute bottom-0 left-0 p-5 text-sm bg-black text-white rounded-tr-3xl z-10 bg-gray-900 text-gray-500">
             <div>
                 PAS Version: <span id="ver" class="ver"></span>
             </div>
@@ -54,7 +55,31 @@
                 Last Updated: <span id="updated_at" class="updated_at"></span>
             </div>
         </div>
+
+        <div class="absolute bottom-0 right-0 p-3 text-sm bg-black text-white rounded-tl-3xl z-10 bg-gray-900 text-gray-500" id="gofs">
+            <button class="w-7 h-7 bg-gray-700 rounded-3xl">🖥</button>
+        </div>
     </div>
+
+    <div id="fsdiv" class="w-screen h-screen bg-black hidden">
+        <div
+            class="grid grid-cols-12 grid-rows-6 h-full gap-4 select-none p-10 text-center text-2xl font-bold text-gray-700">
+            <div class="col-span-12 sm:col-span-12"></div>
+            <div class="col-span-12 sm:col-span-12"></div>
+            <div class="col-span-12 sm:col-span-12 text-gray-700">Prog 12 - (asdasd)</div>
+            <div class="col-span-12 sm:col-span-3"><span id="dafs" class="text-9xl text-white">--</span>d</div>
+            <div class="col-span-12 sm:col-span-3"><span id="dahr" class="text-9xl text-white">--</span>h</div>
+            <div class="col-span-12 sm:col-span-3"><span id="damn" class="text-9xl text-white">--</span>m</div>
+            <div class="col-span-12 sm:col-span-3"><span id="dasc" class="text-9xl text-white">--</span>s</div>
+            <div class="col-span-12 sm:col-span-12"></div>
+        </div>
+
+        <div
+            class="absolute top-0 right-0 p-3 text-sm bg-black text-white rounded-bl-3xl z-10 bg-gray-900 text-gray-500" id="gofs">
+            <button class="w-7 h-7 bg-gray-700 rounded-3xl">❌</button>
+        </div>
+    </div>
+
     <div id="particles-js"></div>
     <script src="./js/dist/pjs.js"></script>
     <script src="./js/script.js"></script>

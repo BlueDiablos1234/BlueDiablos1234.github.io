@@ -152,10 +152,10 @@ function createCard(array, index) {
       <div class="col-span-10 font-bold">${array[1]} - (${array[0]})</div>
       <div class="col-span-4">
         <div class="">
-          <span id="${index}-da" class="text-sm"></span>
-          <span id="${index}-hr" class="text-sm"></span>
-          <span id="${index}-mn" class="text-sm"></span>
-          <span id="${index}-sc"  class="text-sm"></span>
+          <span id="${index}-da" class="text-sm">--</span>
+          <span id="${index}-hr" class="text-sm">--</span>
+          <span id="${index}-mn" class="text-sm">--</span>
+          <span id="${index}-sc"  class="text-sm">--</span>
         </div>
       </div>
       <div class="col-span-5"><span class="font-normal text-sm"> Due: <span>${d8}</span></div>
@@ -279,7 +279,30 @@ function updateMain(s) {
   countdownHours.innerHTML = hours + "h ";
   countdownMins.innerHTML = minutes + "m ";
   countdownSecs.innerHTML = seconds + "s ";
+  document.getElementById('dafs').innerHTML = days
+  document.getElementById('dahr').innerHTML = hours
+  document.getElementById('damn').innerHTML = minutes
+  document.getElementById('dasc').innerHTML = seconds
 }
 
 document.getElementById('ver').innerHTML = eventData.version
 document.getElementById('updated_at').innerHTML = eventData.updated_at
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
+document.querySelectorAll('#gofs').forEach((b) => {
+  console.log(b)
+  b.addEventListener('click', (e) => {
+    document.getElementById('fsdiv').classList.toggle('hidden');
+    document.getElementById('main_cont').classList.toggle('hidden');
+    toggleFullScreen();
+  })
+});
