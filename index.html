@@ -13,43 +13,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <script src="./js/dist/jquery.min.js"></script>
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="min-h-screen sm:py-6 flex sm:justify-center flex-col">
+        <div class="relative sm:max-w-xl sm:mx-auto  z-10">
+            <div
+                class="relative px-4 py-10 bg-black text-white shadow-lg sm:rounded-xl sm:p-12 h-screen sm:h-full w-md">
+                <div class="max-w-md mx-auto">
+                    <div>
+                        <div class="font-bold">Active Project:</div>
+                        <div class="text-2xl font-bold text-center"><span id="course"></span> - (<span
+                                id="code"></span>)</div>
+                    </div>
+                    <div class="py-2 font-bold">
+                        <div>Time Remaining:</div>
+                        <div id="time" class="text-4xl text-center">
+                            <span id="da" class="text-4xl">--d</span>
+                            <span id="hr" class="text-4xl">--h</span>
+                            <span id="mn" class="text-4xl">--m</span>
+                            <span id="sc" class="text-4xl">--s</span>
+                        </div>
+                    </div>
+                    <div class="divide-y divide-gray-200">
+                        <div class="py-8 text-base leading-6 space-y-4 text-gray-400  sm:text-lg sm:leading-7">
+                            <p>Keep an eye out on the following tasks too! Make this two lines!</p>
+                        </div>
+                        <div id="upcoming" class="pt-6 leading-6 sm:text-lg sm:leading-7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 p-5 text-sm bg-black text-white rounded-tr-3xl z-10 bg-gray-900 text-gray-500">
+            <div>
+                PAS Version: <span id="ver" class="ver"></span>
+            </div>
+            <div>
+                Last Updated: <span id="updated_at" class="updated_at"></span>
+            </div>
+        </div>
+    </div>
     <div id="particles-js"></div>
-    <div class="content">
-        <div class="idk">
-            <div class="data">
-                <div>
-                    (<span id="code"></span>) - <span id="course"></span>
-                </div>
-            </div>
-            <div class="time">
-                <p>Time Remaining:</p>
-                <div id="time">
-                    <span id="da"></span>
-                    <span id="hr"></span>
-                    <span id="mn"></span>
-                    <span id="sc"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="metadata">
-        <div class="page">
-            PAS Version: <span id="ver" class="ver"></span>
-        </div>
-        <div class="up">
-            Last Updated: <span id="updated_at" class="updated_at"></span>
-        </div>
-    </div>
-
     <script src="./js/dist/pjs.js"></script>
-    <script>
-
-    </script>
     <script src="./js/script.js"></script>
 </body>
 

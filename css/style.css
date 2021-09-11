@@ -1,51 +1,3 @@
-html, body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Noto Sans', sans-serif;
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-
-.content {
-  display: flex;
-  width: calc(100% - 30px);
-  height: calc(100% - 30px);
-  border-radius: 25px;
-  padding: 15px; 
-  /* background-color: rgba(0,0,0,0.5); */
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
-}
-
-.data {
-  font-size: 26px;
-}
-
-.idk {
-  z-index: 1;
-  width: 50%;
-  background-color: rgba(0,0,0,0.75);
-  padding: 15px;
-  border-radius: 25px
-}
-
-.metadata {
-  color: #5a5a5a;
-  font-size: small;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 155px;
-  background-color: rgba(0,0,0,0.8);
-  border-radius: 0 0 25px 0;
-  padding: 15px;
-}
-
 .red {
   color: #FF2D00;
 }
@@ -56,6 +8,18 @@ html, body {
 
 .blue { 
   color: #3498DB;
+}
+
+.redind {
+  background-color: #FF2D00;
+}
+
+.orangeind {
+  background-color: #FF8C00;
+}
+
+.blueind { 
+  background-color: #3498DB;
 }
 
 body {
