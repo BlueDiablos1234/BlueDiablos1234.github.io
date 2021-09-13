@@ -24,5 +24,5 @@ Landing Page
 
 ```txt
 V0.1
-Default Planner is now under n-8.co.za/plan
+Default Planner is now under https://n-8.co.za/plan
 ```
