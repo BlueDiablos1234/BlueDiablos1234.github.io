@@ -12,6 +12,8 @@ User interface to view Current task in main top display.
 
 ## Upcoming
 
+404 Page
+
 Cass Calculator
 
 Time Table
@@ -25,4 +27,5 @@ Landing Page
 ```txt
 V0.1
 Default Planner is now under https://n-8.co.za/plan
+Temporary Redirection from landing page to plan page
 ```
