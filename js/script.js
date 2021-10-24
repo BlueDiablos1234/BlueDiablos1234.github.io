@@ -4,6 +4,7 @@ const countdownHours = document.getElementById('hr');
 const countdownDays = document.getElementById('da');
 const courseDat = document.getElementById('course');
 const courseCod = document.getElementById('code');
+const activeDate = document.getElementById('active-course-time');
 const threedays = 259200000;
 const twodays = 172800000;
 const onedays = 86400000;
@@ -223,7 +224,6 @@ function setMainTimer(time) {
 }
 
 function setMainObj(force = false, dat) {
-
     eventData.data.forEach((i) => {
       eventDate = new Date(i[2]).getTime();
       today = new Date().getTime();
@@ -234,9 +234,11 @@ function setMainObj(force = false, dat) {
           break;
         case(eventDate >= today):
           if (!isRunning) {
+            let date = new Date(i[2])
             setMainTimer(eventDate);
             courseCod.innerHTML = i[0]
             courseDat.innerHTML = i[1]
+            activeDate.innerHTML = date.toLocaleString('en-GB', {year: 'numeric', month: 'numeric', day: 'numeric', minute: '2-digit', hour: '2-digit'});
             document.getElementById('fscode2').innerHTML = i[0]
             document.getElementById('fscode').innerHTML = i[0]
             document.getElementById('fscourse').innerHTML = i[1]
