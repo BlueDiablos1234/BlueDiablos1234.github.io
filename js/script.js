@@ -15,8 +15,8 @@ let isRunning;
 
 // DATE FORMAT Jan 01, 2022 00:00:00 : type = ["test", "assignment", "exam", "poe"];
 const eventData = {
-  version: "V6",
-  updated_at: "6 Sep 2021", 
+  version: "V7",
+  updated_at: "20 November 2021", 
   data: [
     ["PROG6212", "Task 1", "Sep 20, 2021 23:30:00"],          // P
     ["HCIN6212", "Task 1", "Sep 28, 2021, 23:30:00"],         // H
