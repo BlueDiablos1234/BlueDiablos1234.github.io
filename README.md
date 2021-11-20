@@ -21,11 +21,3 @@ Time Table
 Navigation Bar
 
 Landing Page
-
-## Changelog
-
-```txt
-V0.1
-Default Planner is now under https://n-8.co.za/plan
-Temporary Redirection from landing page to plan page
-```
