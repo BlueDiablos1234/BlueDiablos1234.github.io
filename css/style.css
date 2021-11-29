@@ -26,13 +26,13 @@
  
  background-color: #101010;
  
- /* background: linear-gradient(316deg, #000000, #160000, #130018, #000000, #080027, #000000);
+ background: linear-gradient(316deg, #000000, #160000, #130018, #000000, #080027, #000000);
   background-size: 1400% 1400%;
 
   -webkit-animation: backgroundGradient 10s ease infinite;
   -moz-animation: backgroundGradient 10s ease infinite;
   -o-animation: backgroundGradient 10s ease infinite;
-  animation: backgroundGradient 10s ease infinite;*/
+  animation: backgroundGradient 10s ease infinite;
 }
 .pagenotFound {
 
@@ -41,7 +41,7 @@
   text-align: center;
 
 }
-/*@-webkit-keyframes backgroundGradient {
+@-webkit-keyframes backgroundGradient {
   0%{background-position:0 50%}
   50%{background-position:100% 51%}
   100%{background-position:0 50%}
@@ -73,4 +73,4 @@
   width: 100vw;
   height: 100vh;
   z-index: 0;
-}*/
+}
