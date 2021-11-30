@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/landscape.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    button {
+      border-radius: 8px;
+    }
+  </style>
+  <title>Main</title>
+  <nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: black;">
+    <a class="navbar-brand" href="index.html">N-8</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="calc.html" class="nav-link">Cass Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a href="plan.html" class="nav-link">Event Planner</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </head>
+
 <body>
-  <script>
-    location.replace('https://n-8.co.za/plan')
-  </script>
+  <div class="scene">
+    <div class="sky">
+      <p style="margin: 10px;">For more cool backgrounds, check out stiaann's <a href="https://stiaannel.co.za/">
+          website</a>.</p>
+
+      <div class="moon">
+        <div class="crater c-1"></div>
+        <div class="crater c-2"></div>
+        <div class="crater c-3"></div>
+        <div class="crater c-4"></div>
+        <div class="crater c-5"></div>
+      </div>
+      <div class="cloud">
+        <div class="cl-1"></div>
+        <div class="cl-2"></div>
+        <div class="cl-3"></div>
+        <div class="cl-4"></div>
+      </div>
+      <div class="cloud-2">
+        <div class="cl2-1"></div>
+        <div class="cl2-2"></div>
+        <div class="cl2-3"></div>
+        <div class="cl2-4"></div>
+      </div>
+    </div>
+    <div class="ground">
+      <div class="mountain m-1"></div>
+      <div class="mountain m-2"></div>
+      <div class="mountain m-3"></div>
+      <div class="mountain m-4"></div>
+      <div class="mountain m-5"></div>
+      <div class="mountain m-6"></div>
+      <div class="hill h-1"></div>
+      <div class="hill h-2"></div>
+      <div class="hill h-3"></div>
+      <div class="hill h-4"></div>
+      <div class="hill h-5"></div>
+    </div>
+    <div class="ocean o-1"></div>
+    <div class="ocean o-2">
+      <div class="wave w-1"></div>
+    </div>
+    <div class="ocean o-3">
+      <div class="wave w-2"></div>
+    </div>
+  </div>
 </body>
+
 </html>
