@@ -14,10 +14,4 @@ User interface to view Current task in main top display.
 
 404 Page
 
-Cass Calculator
-
 Time Table
-
-Navigation Bar
-
-Landing Page
