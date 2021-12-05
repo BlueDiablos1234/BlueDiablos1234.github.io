@@ -25,7 +25,6 @@ document.getElementById('btnWork').addEventListener('click', (e) => {
 });
 
 document.getElementById('btnUpgradeWork').addEventListener('click', () => {
-  if(state.upgradeCost >= state.cash) return; 
   if(state.cash >= state.upgradeCost) {
     state.upgradeLevel++;
     state.cash -= state.upgradeCost;
