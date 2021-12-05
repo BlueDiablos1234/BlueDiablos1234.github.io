@@ -41,36 +41,3 @@
   text-align: center;
 
 }
-@-webkit-keyframes backgroundGradient {
-  0%{background-position:0 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0 50%}
-}
-
-@-moz-keyframes backgroundGradient {
-  0%{background-position:0 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0 50%}
-}
-
-@-o-keyframes backgroundGradient {
-  0%{background-position:0 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0 50%}
-}
-
-@keyframes backgroundGradient {
-  0%{background-position:0 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0 50%}
-}
-
-
-#particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-}
