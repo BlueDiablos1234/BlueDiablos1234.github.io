@@ -1,21 +1,12 @@
-# Reminder For VC Students
+# Useful Stuff for VC DISD Students
 
-## Currently
-
-User interface to view Current task in main top display.
-
-|Color|Days Left|
-|-|-|
-|Blue|More than 3|
-|Orange|More than 2|
-|Red|Less than 2|
+## Currently:
 
 Cass Calculator
 
-Landing Page
+Next Assignment Due Date as well as future due dates
 
-## Upcoming
+## Future Development Ideas:
 
-404 Page
+Class Time Table
 
-Time Table
