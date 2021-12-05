@@ -1,6 +1,11 @@
 document.getElementById('weightTask1').addEventListener('input', calculate);
 document.getElementById('weightTask2').addEventListener('input', calculate);
 document.getElementById('weightTask3').addEventListener('input', calculate);
+
+document.getElementById('valTask1').addEventListener('input', calculate);
+document.getElementById('valTask2').addEventListener('input', calculate);
+document.getElementById('valTask3').addEventListener('input', calculate);
+
 document.getElementById('valIce').addEventListener('input', calculate);
 
 function calculate() {
