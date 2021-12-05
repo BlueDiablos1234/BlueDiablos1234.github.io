@@ -28,5 +28,5 @@ function calculate() {
     if(result>=50) {
         document.getElementById("lblresult").style.color = "Lime";
     }
-    document.getElementById("lblresult").innerText = result;
+    document.getElementById("lblresult").innerText = result + "%";
 }
