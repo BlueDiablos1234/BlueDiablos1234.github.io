@@ -5,19 +5,19 @@ const updateDom = () => {
   document.getElementById('txtUpgradeLvl').innerText = Math.round(state.upgradeCost);
   document.getElementById('txtWorkLvl').innerText = state.upgradeLevel
 }
-
+//#region dataLoad
 if (localStorage.getItem('project-gx_save') !== null) {
   let tempState = {}
   tempState = JSON.parse(localStorage.getItem('project-gx_save'));
   state = tempState;
   updateDom();
 }
+//#endregion
 
 //? state.username = prompt("Enter a username");
-
 document.getElementById('username').innerText = state.username == '' ? "Anonymous" : state.username;
 
-
+//#region Work + Upgrade 
 document.getElementById('btnWork').addEventListener('click', (e) => {
   if (!e.isTrusted) return;
   state.cash += state.upgradeLevel;
@@ -32,7 +32,10 @@ document.getElementById('btnUpgradeWork').addEventListener('click', () => {
   }
   updateDom();
 });
+//#endregion
 
+//#region dataSave
 setInterval(() => {
   localStorage.setItem('project-gx_save', JSON.stringify(state))
 }, 1e4);
+//#endregion 
