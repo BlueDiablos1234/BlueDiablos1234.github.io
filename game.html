@@ -15,22 +15,41 @@
         <p>
             Welcome Back: <span id="username">---</span>
         </p>
-        
+
         <p>
             Cash: $<span id="txtCash">--</span>
         </p>
-        
+
         <button id="btnWork" class="px-2 py-1 bg-blue-500 rounded-md">
             Work: $<span id="txtWorkLvl">--</span>
         </button>
-        
+
         <button id="btnUpgradeWork" class="px-2 py-1 bg-blue-500 rounded-md">
             Upgrade: $<span id="txtUpgradeLvl">--</span>
         </button>
-        
+
         <br><br>
+        <button id="btnshowUpgradesDiv" class="px-2 py-1 bg-purple-500 rounded-md">
+            Show Upgrades
+        </button>
+        <div id="upgradesDiv" style="display: none;">
+            <br>
+            <button id="btnbigUpgrade" class="px-2 py-1 bg-blue-500 rounded-md">
+                Big Upgrade: $<span id="txtbigUpgradeLvl">--</span><br>
+                <small id="txtupgradeDesc">This will multiply your work value by x2</small>
+            </button>
+        </div>
+        <br><br>
+        <button id="btnshowAutoUpgradesDiv" class="px-2 py-1 bg-purple-500 rounded-md">
+            Show Automation
+        </button>
         
-        <div id="dev">
+        <div id="AutoDiv" style="display: none;">
+            <br>
+            <button id="btnAutoUpgrade" class="px-2 py-1 bg-blue-500 rounded-md">
+                Auto Upgrade: $<span id="txtAutoUpgradeLvl">--</span><br>
+                <small id="txtautoDesc">This will automatically increment your $ by 1</small>
+            </button>
         </div>
     </div>
 </body>
