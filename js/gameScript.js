@@ -56,8 +56,6 @@ function bigUpgradeDesc() {
   }
 }
 
-
-
 const updateDom = () => {
   document.getElementById('txtCash').innerText = Math.round(state.cash);
   document.getElementById('txtUpgradeLvl').innerText = Math.round(state.upgradeCost);
@@ -66,21 +64,14 @@ const updateDom = () => {
   document.getElementById('txtupgradeDesc').innerText = desc[state.bigUpgradeLevel];
   document.getElementById('txtAutoUpgradeLvl').innerText = Math.round(state.autoUpgradeCost);
 }
-//#region dataLoad
+
 if (localStorage.getItem('project-gx_save') !== null) {
   let tempState = {}
   tempState = JSON.parse(localStorage.getItem('project-gx_save'));
   state = tempState;
   updateDom();
 }
-//#endregion
 
-<<<<<<< Updated upstream
-//? state.username = prompt("Enter a username");
-document.getElementById('username').innerText = state.username == '' ? "Anonymous" : state.username;
-
-//#region Work + Upgrade 
-=======
 //! Calculate shid here
 //? In a funct or not
 function calcOfflineShit() {
@@ -97,7 +88,6 @@ calcOfflineShit();
 document.getElementById('username').innerText = state.username == '' ? "Anonymous" : state.username;
 state.showAuto ? document.getElementById('btnshowAutoUpgradesDiv').style.display = 'block' : document.getElementById('btnshowAutoUpgradesDiv').style.display = 'none';
 
->>>>>>> Stashed changes
 document.getElementById('btnWork').addEventListener('click', (e) => {
   if (!e.isTrusted) return;
   state.cash += state.upgradeLevel;
@@ -105,31 +95,17 @@ document.getElementById('btnWork').addEventListener('click', (e) => {
 });
 
 document.getElementById('btnUpgradeWork').addEventListener('click', () => {
-<<<<<<< Updated upstream
-  if(state.cash >= state.upgradeCost) {
-=======
   if (state.cash >= state.upgradeCost) {
->>>>>>> Stashed changes
     state.upgradeLevel++;
     state.cash -= state.upgradeCost;
     state.upgradeCost *= 1.4;
   }
   updateDom();
 });
-//#endregion
 
-<<<<<<< Updated upstream
-//#region dataSave
-=======
-
->>>>>>> Stashed changes
 setInterval(() => {
   state.lastSavedAt = Date.now();
   localStorage.setItem('project-gx_save', JSON.stringify(state))
-<<<<<<< Updated upstream
-}, 1e4);
-//#endregion 
-=======
 }, 1000);
 
 document.getElementById('btnshowUpgradesDiv').addEventListener('click', () => {
@@ -181,4 +157,3 @@ const stopAuto = () => {
   state.auto = !state.auto;
   autoRunning = undefined;
 }
->>>>>>> Stashed changes
