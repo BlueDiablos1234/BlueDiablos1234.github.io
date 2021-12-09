@@ -106,7 +106,7 @@ document.getElementById('btnUpgradeWork').addEventListener('click', () => {
 setInterval(() => {
   state.lastSavedAt = Date.now();
   localStorage.setItem('project-gx_save', JSON.stringify(state))
-}, 1000);
+}, 1e4);
 
 document.getElementById('btnshowUpgradesDiv').addEventListener('click', () => {
   var x = document.getElementById("upgradesDiv");
