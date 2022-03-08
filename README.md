@@ -1,6 +1,6 @@
 # Useful Stuff for VC DISD Students
 
-## Currently:
+## Features:
 
 Cass Calculator
 
