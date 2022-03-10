@@ -15,20 +15,21 @@ let isRunning;
 
 // DATE FORMAT Jan 01, 2022 00:00:00 : type = ["test", "assignment", "exam", "poe"];
 const eventData = {
-  version: "V7",
-  updated_at: "29 November 2021", 
+  version: "V1",
+  updated_at: "10 March 2022", 
   data: [
-    ["PROG6212", "Task 1", "Sep 20, 2021 23:30:00"],          // P
-    ["HCIN6212", "Task 1", "Sep 28, 2021, 23:30:00"],         // H
-    ["DATA6212", "Assignment", "Oct 05, 2021, 23:30:00"],     // D
-    
-    ["DATA6212", "Take Home Test", "Oct 21, 2021, 21:00:00"], // D
-    ["PROG6212", "Task 2", "Oct 26, 2021, 23:30:00"],         // P
-    ["HCIN6212", "Task 2", "Nov 01, 2021, 23:30:00"],         // H
-    
-    ["PROG6212", "POE", "Nov 17, 2021, 23:30:00"],            // P
-    ["HCIN6212", "POE", "Nov 23, 2021, 23:30:00"],            // H
-    ["DATA6212", "Take Home Exam", "Dec 07, 2021, 21:00:00"]  // D
+    ["OPSC7311", "Part 1", "Apr 25, 2022 21:00:00"],          
+    ["WEDE6011", "Part 1", "Apr 28, 2022, 21:00:00"],         
+    ["ISEC6311", "Assignment", "May 05, 2022, 21:00:00"],     
+    ["ISEC6311", "Take Home Test", "May 13, 2022, 21:00:00"], 
+    ["ADDB7311", "On Campus Test", "May 17, 2022, 11:00:00"],
+    ["WEDE6011", "Part 2", "May 26, 2022, 21:00:00"],
+    ["ADDB7311", "Assignment", "Jun 02, 2022, 11:00:00"],
+    ["OPSC7311", "Part 2", "Jun 07, 2022, 21:00:00"],
+    ["ISEC7311", "Take Home Exam", "Jun 22, 2022, 21:00:00"],            
+    ["ADDB7311", "On Campus Exam", "Jun 24, 2022, 08:00:00"],            
+    ["OPSC7311", "POE", "Jun 28, 2022, 21:00:00"],  
+    ["WEDE6011", "POE", "Jul 04, 2022, 21:00:00"]
   ]
 };
 
