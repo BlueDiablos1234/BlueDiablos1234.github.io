@@ -1,8 +1,6 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         body {
             background-color: #1e1e1e;
@@ -25,70 +23,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://img.icons8.com/ios/100/4a90e2/saving-book.png" type="image/x-icon">
     <title>Cass Calculator</title>
-    <nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: black;">
-        <a class="navbar-brand" href="index.html">N-8</a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a href="calc.html" class="nav-link">Cass Calculator</a>
-            </li>
-            <li>
-                <a href="time.html" class="nav-link">TimeTable</a>
-            </li>
-            <li class="nav-item">
-                <a href="plan.html" class="nav-link">Enhanced PAS</a>
-            </li>
-            <li class="nav-item">
-                <a href="poe.html" class="nav-link">POE</a>
-            </li>
-        </ul>
-    </nav>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
+    <div class="h-12 w-full flex flex-row justify-start px-2 flex-wrap">
+        <a href="./index.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">N-8</a>
+        <a href="./calc.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Cass Calculator</a>
+        <a href="./plan.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Enhanced PAS</a>
+        <a href="./time.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Timetable</a>
+        <a href="./poe.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">POE</a>
+    </div>
     <center>
         <br>
-        <h3>Cass Calculator</h3>
-        <br>
-        <div style="background-color:black; width:65%;padding:5px; border-radius: 12px;">
+        <h3 class="pb-2">Cass Calculator</h3>
+        <div class="bg-gray-900 mx-20 rounded-xl p-4 flex flex-col gap-2">
             <label>Task 1</label>
-            <div class="form-row" style="width:70%">
-                <div class="form-group col-md-6 col-sm-6">
-                    <input type="text" class="form-control" id="valTask1" placeholder="Mark"
-                        style="background-color: #1e1e1e; color: white; border: none;">
-                </div>
-                <div class="form-group col-md-6 col-sm-6">
-                    <input type="text" class="form-control" id="weightTask1" placeholder="Weight"
-                        style="background-color: #1e1e1e; color: white; border: none;">
-                </div>
+            <div class="w-full">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="valTask1" placeholder="Mark">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="weightTask1" placeholder="Weight">
             </div>
             <label>Task 2</label>
-            <div class="form-row" style="width:70%">
-                <div class="form-group col-md-6 col-sm-6">
-                    <input type="text" class="form-control" id="valTask2" placeholder="Mark"
-                        style="background-color: #1e1e1e; color: white; border: none;">
-                </div>
-                <div class="form-group col-md-6 col-sm-6">
-                    <input type="text" class="form-control" id="weightTask2" placeholder="Weight"
-                        style="background-color: #1e1e1e; color: white; border: none;">
-                </div>
+            <div class="">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="valTask2" placeholder="Mark">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="weightTask2" placeholder="Weight">
             </div>
             <label>Task 3</label>
-            <div class="form-row" style="width:70%">
-                <div class="form-group col-md-6 col-sm-6">
-                    <input type="text" class="form-control" id="valTask3" placeholder="Mark"
-                        style="background-color: #1e1e1e; color: white; border: none;">
-                </div>
-                <div class="form-group col-md-6 col-sm-6">
-                    <input type="text" class="form-control" id="weightTask3" placeholder="Weight"
-                        style="background-color: #1e1e1e; color: white; border: none;">
-                </div>
+            <div class="">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="valTask3" placeholder="Mark">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="weightTask3" placeholder="Weight">
             </div>
             <label>Ice</label>
-            <div class="form-row" style="width:70%">
-                <div class="form-group col-md-12 col-sm-12">
-                    <input type="text" class="form-control" id="valIce" placeholder="Mark"
-                        style="background-color: #1e1e1e; color: white; border: none;">
-                </div>
+            <div class="">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="valIce" placeholder="Mark">
             </div>
             <p>Result:</p>
             <label id="lblresult"></label>
