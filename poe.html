@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: darkgray;
+        }
+        button {
+            background-color: black;
+            border: 0;
+            color: White;
+        }
+        button:hover {
+            color: darkgray;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/100/4a90e2/saving-book.png" type="image/x-icon">
+    <title>Cass Calculator</title>
+    <nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: black;">
+        <a class="navbar-brand" href="index.html">N-8</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a href="calc.html" class="nav-link">Cass Calculator</a>
+            </li>
+            <li>
+                <a href="time.html" class="nav-link">TimeTable</a>
+            </li>
+            <li class="nav-item">
+                <a href="plan.html" class="nav-link">Enhanced PAS</a>
+            </li>
+            <li class="nav-item">
+                <a href="poe.html" class="nav-link">POE</a>
+            </li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <center>
+        <br>
+        <h3>POE</h3>
+        <br>
+        <div style="background-color:black; width:50%;padding:5px; border-radius: 12px;">
+            <button id="ADDB">ADDB7311-A1</button> 
+            <button id="ISEC">ISEC6311-A1</button>
+            <button id="OPSC">OPSC7311-POE</button>
+            <button id="WEDE">WEDE6011-POE</button>
+        </div>
+        <iframe src="poe/ADDB7311A1.pdf" id="ADDB-pdf" frameborder="0" width="70%" height="70%" style="border-radius: 12px;" class="hidden"></iframe>
+        <iframe src="poe/ISEC6311A1.pdf" id="ISEC-pdf" frameborder="0" width="70%" height="70%" style="border-radius: 12px;" class="hidden"></iframe>
+        <iframe src="poe/OPSC7311POE.pdf" id="OPSC-pdf" frameborder="0" width="70%" height="70%" style="border-radius: 12px;" class="hidden"></iframe>
+        <iframe src="poe/WEDE6011POE.pdf" id="WEDE-pdf" frameborder="0" width="70%" height="70%" style="border-radius: 12px;" class="hidden"></iframe>
+    </center>
+</body>
+<script src="js/poe.js"></script>
+</html>
