@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: darkgray;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/100/4a90e2/saving-book.png" type="image/x-icon">
+    <title>Cass Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="h-12 w-full flex flex-row justify-start px-2 flex-wrap">
+        <a href="./index.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">N-8 BEDFP</a>
+        <a href="./calc.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Cass Calculator</a>
+        <a href="./plan.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Enhanced PAS</a>
+        <a href="./time.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Timetable</a>
+        <a href="./poe.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">POE</a>
+        <a href="./about.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">About</a>
+      </div>
+    <center>
+        <br>
+        <h3 class="pb-2">Cass Calculator</h3>
+        <div class="bg-gray-900 mx-20 rounded-xl p-4 flex flex-col gap-2" style="background-color: #0e0e0e;">
+            <label>Task 1</label>
+            <div class="w-full">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="valTask1" placeholder="Mark">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="weightTask1" placeholder="Weight">
+            </div>
+            <label>Task 2</label>
+            <div class="">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="valTask2" placeholder="Mark">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="weightTask2" placeholder="Weight">
+            </div>
+            <label>Task 3</label>
+            <div class="">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="valTask3" placeholder="Mark">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="weightTask3" placeholder="Weight">
+            </div>
+            <label>Ice</label>
+            <div class="">
+                <input type="text" class="p-2 rounded-lg bg-black text-white" id="valIce" placeholder="Mark">
+            </div>
+            <p>Result:</p>
+            <label id="lblresult"></label>
+        </div>
+    </center>
+
+    <script src="/js/calc.js"></script>
+</body>
+
+</html>
