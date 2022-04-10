@@ -85,7 +85,7 @@ function setTimers(arr, ind, time) { // Upcoming Timers
       clearInterval(timers[ind]);
       setUpcomingObj();
     }
-  }, 100)
+  }, 500)
 }
 
 function setMainTimer(time) {
@@ -112,7 +112,7 @@ function setMainTimer(time) {
       document.getElementById('time').classList.add('red');
     }
     // Display the message when countdown is over
-  }, 100)
+  }, 500)
 }
 
 function setMainObj(force = false, dat) {
