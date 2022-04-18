@@ -15,12 +15,14 @@
         a:hover {
             color: darkgray;
         }
+
         button {
             background-color: black;
             border: 0;
             color: White;
         }
-        .hidden {
+
+        .hiddenPoe {
             display: none;
         }
     </style>
@@ -34,31 +36,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="h-12 w-full flex flex-row justify-start px-2 flex-wrap">
-        <a href="./index.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">N-8</a>
-        <a href="./calc.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Cass Calculator</a>
-        <a href="./plan.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Enhanced PAS</a>
-        <a href="./time.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Timetable</a>
-        <a href="./poe.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">POE</a>
-        <a href="https://null400.notion.site/Varsity-College-921e555197d34063ab2020088d3e685b" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Notes</a>
-        <a href="./about.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">About</a>
-      </div>
-    <center>
-        <br>
-        <h3>POE</h3>
-        <br>
-        <div style="background-color:black; width:50%;padding:5px; border-radius: 12px;">
-            <button class="rounded-t-lg bg-gray-900 p-2 hover:bg-gray-800" id="ADDB">ADDB7311-A1</button> 
-            <button class="rounded-t-lg bg-gray-900 p-2 hover:bg-gray-800" id="ISEC">ISEC6311-A1</button>
-            <button class="rounded-t-lg bg-gray-900 p-2 hover:bg-gray-800" id="OPSC">OPSC7311-POE</button>
-            <button class="rounded-t-lg bg-gray-900 p-2 hover:bg-gray-800" id="WEDE">WEDE6011-POE</button>
-        </div>
-        <iframe src="poe/ADDB7311A1.pdf" id="ADDB-pdf" frameborder="0" width="75%" height="75%" style="border-radius: 12px;" class="hidden"></iframe>
-        <iframe src="poe/ISEC6311A1.pdf" id="ISEC-pdf" frameborder="0" width="75%" height="75%" style="border-radius: 12px;" class="hidden"></iframe>
-        <iframe src="poe/OPSC7311POE.pdf" id="OPSC-pdf" frameborder="0" width="75%" height="75%" style="border-radius: 12px;" class="hidden"></iframe>
-        <iframe src="poe/WEDE6011POE.pdf" id="WEDE-pdf" frameborder="0" width="75%" height="75%" style="border-radius: 12px;" class="hidden"></iframe>
-    </center>
-</body>
+<div class="h-12 w-full flex flex-row justify-start px-2 flex-wrap">
+    <a href="./index.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">N-8</a>
+    <a href="./calc.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Cass Calculator</a>
+    <a href="./plan.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Enhanced PAS</a>
+    <a href="./time.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Timetable</a>
+    <a href="./poe.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">POE</a>
+    <a href="https://null400.notion.site/Varsity-College-921e555197d34063ab2020088d3e685b" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">Notes</a>
+    <a href="./about.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200">About</a>
+</div>
+<center>
+    <br>
+    <h3>POE</h3>
+    <br>
+    <div style="background-color:black; width:50%;padding:5px; border-radius: 12px;">
+        <button class="rounded-t-lg bg-gray-900 p-2 hover:bg-gray-800" id="ADDB">ADDB7311-A1</button>
+        <button class="rounded-t-lg bg-gray-900 p-2 hover:bg-gray-800" id="ISEC">ISEC6311-A1</button>
+        <button class="rounded-t-lg bg-gray-900 p-2 hover:bg-gray-800" id="OPSC">OPSC7311-POE</button>
+        <button class="rounded-t-lg bg-gray-900 p-2 hover:bg-gray-800" id="WEDE">WEDE6011-POE</button>
+    </div>
+    <iframe src="poe/ADDB7311A1.pdf" id="ADDB-pdf" frameborder="0" width="75%" height="75%" style="border-radius: 12px;" class="hiddenPoe"></iframe>
+    <iframe src="poe/ISEC6311A1.pdf" id="ISEC-pdf" frameborder="0" width="75%" height="75%" style="border-radius: 12px;" class="hiddenPoe"></iframe>
+    <iframe src="poe/OPSC7311POE.pdf" id="OPSC-pdf" frameborder="0" width="75%" height="75%" style="border-radius: 12px;" class="hiddenPoe"></iframe>
+    <iframe src="poe/WEDE6011POE.pdf" id="WEDE-pdf" frameborder="0" width="75%" height="75%" style="border-radius: 12px;" class="hiddenPoe"></iframe>
+</center>
 <script src="js/poe.js"></script>
+
 </html>

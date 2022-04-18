@@ -5,25 +5,25 @@ const opsc = document.getElementById("OPSC-pdf");
 const wede = document.getElementById("WEDE-pdf");
 
 document.getElementById('ADDB').addEventListener('click', function() {
-    none();
-    addb.classList.remove("hidden");
+    poeNone();
+    addb.classList.remove("hiddenPoe");
 });
 document.getElementById('ISEC').addEventListener('click', function() {
-    none();
-    isec.classList.remove("hidden");
+    poeNone();
+    isec.classList.remove("hiddenPoe");
 });
 document.getElementById('OPSC').addEventListener('click', function() {
-    none();
-    opsc.classList.remove("hidden");
+    poeNone();
+    opsc.classList.remove("hiddenPoe");
 });
 document.getElementById('WEDE').addEventListener('click', function() {
-    none();
-    wede.classList.remove("hidden");
+    poeNone();
+    wede.classList.remove("hiddenPoe");
 });
 
-function none() {
-    addb.classList.add("hidden");
-    isec.classList.add("hidden");
-    opsc.classList.add("hidden");
-    wede.classList.add("hidden");
+function poeNone() {
+    addb.classList.add("hiddenPoe");
+    isec.classList.add("hiddenPoe");
+    opsc.classList.add("hiddenPoe");
+    wede.classList.add("hiddenPoe");
 }
