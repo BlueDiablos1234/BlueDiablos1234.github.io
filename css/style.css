@@ -21,19 +21,6 @@
 .blueind { 
   background-color: #3498DB;
 }
-
- body {
- 
- background-color: #101010;
- 
- background: linear-gradient(316deg, #000000, #160000, #130018, #000000, #080027, #000000);
-  background-size: 1400% 1400%;
-
-  -webkit-animation: backgroundGradient 10s ease infinite;
-  -moz-animation: backgroundGradient 10s ease infinite;
-  -o-animation: backgroundGradient 10s ease infinite;
-  animation: backgroundGradient 10s ease infinite;
-}
 .pagenotFound {
 
   background-color: black;
