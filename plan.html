@@ -38,17 +38,29 @@
                     <div class="max-w-md mx-auto">
                         <div>
                             <div class="font-bold">Active Project:</div>
-                            <div class="text-2xl font-bold text-center"><span id="course"></span> - (<span
-                                    id="code"></span>)</div>
+                            <div class="text-2xl font-bold text-center">
+                                <span id="course"></span>
+                                <span id="code">
+                                </span>
+                            </div>
                             <div class="text-l text-center">Due: <span id="active-course-time"></span></div>
+                            <div id="blank" class="text-4xl text-center hidden">
+                                <div class="bg-gray-800 animate-pulse rounded-xl text-transparent my-2">
+                                    <span id="active-course-time">.</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="py-2 font-bold">
                             <div>Time Remaining:</div>
                             <div id="time" class="text-4xl text-center">
-                                <span id="da" class="text-4xl">--d</span>
-                                <span id="hr" class="text-4xl">--h</span>
-                                <span id="mn" class="text-4xl">--m</span>
-                                <span id="sc" class="text-4xl">--s</span>
+                                <span id="da" class="text-4xl"></span>
+                                <span id="hr" class="text-4xl"></span>
+                                <span id="mn" class="text-4xl"></span>
+                                <span id="sc" class="text-4xl"></span>
+                            </div>
+                            <div id="blank" class="text-4xl text-center hidden">
+                                <div class="bg-gray-800 animate-pulse rounded-xl p-2 text-transparent my-2">.
+                                </div>
                             </div>
                         </div>
                         <div class="divide-y divide-gray-200">
@@ -56,6 +68,21 @@
                                 <p class="text-center"> Final Stretch! </p>
                             </div>
                             <div id="upcoming" class="pt-6 leading-6 sm:text-lg sm:leading-7">
+                            </div>
+                            <div id="blank" class="pt-6 leading-6 sm:text-lg sm:leading-7 hidden">
+                                <div class="font-bold">Upcoming:</div>
+                                <div class="bg-gray-900 p-3 m-2 rounded-xl grid grid-cols-12">
+                                    <div id="0-indicator" class="w-8 h-8 rounded-3xl row-span-3 col-span-2 my-auto bg-gray-800 animate-pulse"></div>
+                                    <div class="sm:col-span-10 col-span-10 col-start-3 row-span-3 text-transparent bg-gray-800 animate-pulse p-4 rounded-lg"></div>
+                                </div>
+                                <div class="bg-gray-900 p-3 m-2 rounded-xl grid grid-cols-12">
+                                    <div id="0-indicator" class="w-8 h-8 rounded-3xl row-span-3 col-span-2 my-auto bg-gray-800 animate-pulse"></div>
+                                    <div class="sm:col-span-10 col-span-10 col-start-3 row-span-3 text-transparent bg-gray-800 animate-pulse p-4 rounded-lg"></div>
+                                </div>
+                                <div class="bg-gray-900 p-3 m-2 rounded-xl grid grid-cols-12">
+                                    <div id="0-indicator" class="w-8 h-8 rounded-3xl row-span-3 col-span-2 my-auto bg-gray-800 animate-pulse"></div>
+                                    <div class="sm:col-span-10 col-span-10 col-start-3 row-span-3 text-transparent bg-gray-800 animate-pulse p-4 rounded-lg"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,7 +101,7 @@
     </div>
 
     <script src="./js/dist/pjs.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/plan.js"></script>
 </body>
 
 </html>

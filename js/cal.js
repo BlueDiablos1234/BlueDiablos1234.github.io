@@ -16,6 +16,13 @@ const n2 = document.getElementById("N2");
 const n3 = document.getElementById("N3");
 const noass = document.getElementById("noAss");
 
+const objectArray = [s1, s2, s3, o1, o2, o3, n1, n2, n3];
+const objects = () => {
+  objectArray.map((aa) => {
+    aa.classList.add('hidden')
+  });
+}
+
 let dates = document.getElementById('dates');
 let value = dates.options[dates.selectedIndex].value;
 
@@ -24,17 +31,8 @@ dates.addEventListener("change", function() {
   console.log("Change!");
   dateChecker(value);
 });
-
 const dateChecker = (value) => {
-  s1.classList.add("hidden");
-  s2.classList.add("hidden");
-  s3.classList.add("hidden");
-  o1.classList.add("hidden");
-  o2.classList.add("hidden");
-  o3.classList.add("hidden");
-  n1.classList.add("hidden");
-  n2.classList.add("hidden");
-  n3.classList.add("hidden");
+  objects();
   noass.classList.remove("hidden");
 
   if(value==="September") {

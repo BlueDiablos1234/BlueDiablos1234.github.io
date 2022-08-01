@@ -32,7 +32,6 @@ const eventData = {
   ]
 };
 
-
 function createCard(array, index) {
   d8 = new Date(array[2]).toLocaleDateString();
   template = `
@@ -90,14 +89,13 @@ function setMainTimer(time) {
   var mainTimer = setInterval(function () {
   let tim = countDownDate - Date.now()
   var timeleft = -Math.round(-tim / 1000) * 1000;
-  console.log(timeleft)
     if (timeleft <= 0) {
       clearInterval(mainTimer);
       isRunning = false;
       setMainObj();
       setUpcomingObj();
     }
-    
+  
     updateMain(timeleft);
     
     if (timeleft >= threedays) { // 3 days
@@ -145,6 +143,12 @@ function setUpcomingObj() {
       upcoming.push(e)
     }
   })
+  if (upcoming.length <= 0) {
+    document.querySelectorAll('#blank').forEach((div) => {
+      div.classList.remove('hidden')
+    })
+    document.getElementById('upcoming').classList.add('hidden')
+  }
   next = upcoming[0]
   upcoming.slice(1,4).forEach((e, i) => {
     upcDate = new Date(e[2]).getTime()
