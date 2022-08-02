@@ -3,7 +3,7 @@ const month = ["January","February","March","April","May","June","July","August"
 const d = new Date();
 let date = month[d.getMonth()];
 let day = d.getDate()
- document.getElementById("current_date").innerHTML = "Current Month: " + day + " " + date;
+document.getElementById("current_date").innerHTML = "Current Month: " + day + " " + date;
 
 const s1 = document.getElementById("S1");
 const s2 = document.getElementById("S2");

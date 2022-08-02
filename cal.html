@@ -1,5 +1,5 @@
 <!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
@@ -8,11 +8,10 @@
       display: none;
     }
   </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Calendar</title>
-    <link rel="stylesheet" href="/css/style.css">
-    
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Calendar</title>
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body class="bg-black">
@@ -27,24 +26,64 @@
     <a href="./about.html" class="border-lg my-auto p-2 hover:bg-gray-800 transition-colors duration-200 rounded-md">About</a>
     <div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
     <a href="https://null400.notion.site/Varsity-College-921e555197d34063ab2020088d3e685b" target="_blank" class="border-lg my-auto p-2 hover:bg-gray-800 hover:text-red-800 transition-colors duration-200 rounded-md">Notes</a>
-</div>
-<center>
-    <div class="bg-gray-900 rounded-md m-12 p-6 font-bold" style="width: 50%;">
-      <div class="text-2xl text-center text-white">Upcoming Events For the Month</div>
-      <div class="m-8 rounded-md  p-8 text-white">
+  </div>
+  <div class="bg-gray-900 p-8 mx-16 mt-16 text-center text-2xl text-white rounded-md">
+    <div class="mb-4">XISD Submission Timeline</div>
+    <div class="text-xl text-center flex flex-row justify-center ">
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X1">
+        <div>Week 1</div>
+        <div class="text-sky-200">Saturday 6 Aug</div>
+      </div>
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X2">
+        <div>Week 2</div>
+        <div class="text-sky-200">Saturday 13 Aug</div>
+      </div>
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X3">
+        <div>Week 3</div>
+        <div class="text-sky-200">Monday 22 Aug</div>
+      </div>
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X4">
+        <div>Week 4</div>
+        <div class="text-sky-200">Tuesday 27 Aug</div>
+      </div>
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X5">
+        <div>Week 5</div>
+        <div class="text-sky-200">Saturday 3 Sep</div>
+      </div>
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X6">
+        <div>Week 6-8</div>
+        <div class="text-sky-200">Saturday 8 Oct</div>
+      </div>
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X7">
+        <div>Mock</div>
+        <div class="text-sky-200">Wednesday 20 Oct</div>
+      </div>
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X8">
+        <div>Halt</div>
+        <div class="text-sky-200">Saturday 5 Nov</div>
+      </div>
+      <div class="m-2 w-52 rounded-md p-2 text-sky-500 bg-gray-700" id="X9">
+        <div>Presentation</div>
+        <div class="text-sky-200">Tuesday 8 Nov</div>
+      </div>
+    </div>
+  </div>
+  <center>
+    <div class="bg-gray-900 rounded-md mx-12 mt-4 p-6 font-bold w-1/2">
+      <div class="text-2xl text-center text-white">
+        Upcoming Events For the Month
+      </div>
+      <div class="m-2 rounded-md p-8 text-white">
         <div class="mb-2 text-sky-500 text-2xl" id="current_date"></div>
-        <div>
-          <div class="mb-2">
-            or Change it your self!
-          </div>
-          <select name="dates" id="dates" class="bg-gray-800 rounded-md p-2 mb-2 outline-0 focus:ring-2 focus:ring-sky-500">
-            <option value="August" id="August">August</option>
-            <option value="September" id="September">September</option>
-            <option value="October" id="October">October</option>
-            <option value="November" id="November">November</option>
-            <option value="December" id="December">December</option>
-          </select>
-        </div>
+        <div class="mb-2">or Change it your self!</div>
+        <select name="dates" id="dates"
+          class="bg-gray-800 rounded-md p-2 mb-2 outline-0 focus:ring-2 focus:ring-sky-500">
+          <option value="August" id="August">August</option>
+          <option value="September" id="September">September</option>
+          <option value="October" id="October">October</option>
+          <option value="November" id="November">November</option>
+          <option value="December" id="December">December</option>
+        </select>
         <div class="flex text-xl text-center">
           <div class="m-2 w-60 rounded-md p-2 text-sky-500 hidden bg-gray-700" id="S1">
             <div>OPSC7312</div>
@@ -96,10 +135,16 @@
             <div class="text-sky-200">21 November</div>
           </div>
         </div>
-        <div class="mt-20 text-3xl" id="noAss">No Assignments due in this month : )</div>
+        <div class="mt-11 text-3xl select-none" id="noAss">
+          No Assignments due in this month <div class="animate-pulse text-cyan-800">: )</div>
+        </div>
+
       </div>
     </div>
   </center>
+
 </body>
+
 <script src="js/cal.js"></script>
+
 </html>
