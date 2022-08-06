@@ -18,15 +18,23 @@ function calculate() {
     var valIce = document.getElementById("valIce").value;
 
     let result;
+    let weightTotal;
     result = (task1val * weightTask1 / 100) + (task2val * weightTask2 / 100) + (task3val * weightTask3 / 100) + (valIce * 10 / 100);
+    weightTotal = (+weightTask1 + +weightTask2 + +weightTask3 +(+valIce/100*10))
+
+    const res = document.getElementById("lblresult");
+    const weg = document.getElementById("lblweightTotal");
     if(result<=25) {
-        document.getElementById("lblresult").style.color = "Red";
+        res.style.color = "Red";
     }
     if(result>=26) {
-        document.getElementById("lblresult").style.color = "Orange";
+        res.style.color = "Orange";
     }
     if(result>=50) {
-        document.getElementById("lblresult").style.color = "Lime";
+        res.style.color = "Lime";
     }
-    document.getElementById("lblresult").innerText = result + "%";
+
+    (weightTotal>100) ? weg.style.color = "Red" : weg.style.color = "White";
+    res.innerText = result + "%";
+    weg.innerText = "Total Weight: " + weightTotal + "%";
 }
