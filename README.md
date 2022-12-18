@@ -1,11 +1,7 @@
-# Useful Stuff for VC DISD Students
+# Portfolio of Sudo-Nathan, N-8, Nathan
 
 ## Features:
 
-Cass Calculator
+Deprecated College Apps
 
-Next Assignment Due Date as well as future due dates
-
-Class Time Table
-
-Calendar to view upcoming events and XISD submission date
+Skills and assets learnt during studies.
