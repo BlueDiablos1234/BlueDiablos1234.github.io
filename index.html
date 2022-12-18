@@ -22,6 +22,53 @@
     a:hover {
       color: darkgray;
     }
+    /* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: #333;
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -35px;
+  border: 3px solid orangered;
+}
   </style>
   <link rel="stylesheet" href="./css/style.css">
   <title>Main</title>
@@ -38,18 +85,54 @@
 
 <body class="bg-black">
   <div class="h-12 w-full flex flex-row justify-start px-2 flex-wrap bg-gray-900 text-white">
-    <a href="./index.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md text-sky-500 hover:text-teal-500">N-8</a>
+    <a href="index.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md text-sky-500 hover:text-teal-500">N-8</a>
     <div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
-    <a href="./calc.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">Cass Calculator</a>
-    <a href="./plan.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">Enhanced PAS</a>
-    <a href="./time.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">Timetable</a>
-    <a href="./poe.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">POE</a>
-    <a href="./cal.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">Calendar</a>
-    <a href="./about.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">About</a>
-    <div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
-    <a href="https://null400.notion.site/Varsity-College-921e555197d34063ab2020088d3e685b" target="_blank" class="border-lg my-auto p-2 hover:text-red-800 transition-colors duration-200 rounded-md">Notes</a>
+      <a href="./college/calc.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">College Apps</a>
+      <div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
+      <a target="_blank" href="https://github.com/sudo-nathan"><img class="bg-white rounded-full h-8 w-8 mt-2 mr-2 absolute right-0" src="https://img.icons8.com/ios/50/null/github--v1.png"/></a>
   </div>
-  
+  <div class="bg-neutral-900 m-6 rounded-md">
+    <h5 class="text-white text-center pt-4">My portfolio or something</h5>
+    <div class="mt-4 ml-2 text-white">
+      <div class="timeline float-right mr-8">
+        <div class="mb-4">Study and Learning Timeline</div>
+        <div class="outer">
+          <div class="card">
+            <div class="info">
+              <h3 class="title">2020</h3>
+              <p class="text-white">Started at Varsity College</p>
+              <p class="text-sm text-white">Languages/Libraries Learnt: <br>Java, JOptionsPanes, Html, Css, Bootstrap.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="info">
+              <h3 class="title">2021</h3>
+              <p class="text-white">2nd Year at College</p>
+              <p class="text-sm text-white">Languages/Libraries Learnt: <br>Java, C#, Windows Forms, ASP.net, Html, Css, PHP.</p>
+              <p class="text-sm text-white">*Languages/Libraries I learnt in my free time: <br>Javascript, TailWindCss</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="info">
+              <h3 class="title">2022</h3>
+              <p class="text-white">Final Year at College</p>
+              <p class="text-sm text-white">Languages/Libraries Learnt: <br>Java, Android Studio, C#, ASP.NET MVC, Html, Css, TailWindCss</p>
+              <p class="text-sm text-white">*Languages/Libraries I learnt in my free time: <br>Javascript, React.js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-base">College Apps I built (see navbar) see Navbar :) <b class="text-red-500">Outdated*</b></div>
+    </div>
+    <div class="mt-4 ml-2">
+      <p class="text-white">Codewars</p>
+      <a target="_blank" href="https://www.codewars.com/"><img src="https://www.codewars.com/users/sudo-nathan/badges/large" alt="codewars badge"/></a>
+    </div>
+    <div class="mt-4 ml-2 pb-80">
+      <a target="_blank" href="https://github.com/sudo-nathan"><img src="https://github-readme-stats.vercel.app/api?username=sudo-nathan&count_private=true&show_icons=true&include_all_commits=true&theme=dark"></img></a>
+    </div>
+  </div>
+
 </body>
-  
+
 </html>
