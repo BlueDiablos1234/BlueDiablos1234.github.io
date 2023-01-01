@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List</title>
+	</head>
+	<body class="bg-black">
+		<div
+			class="h-12 w-full flex flex-row justify-start px-2 flex-wrap bg-gray-900 text-white"
+		>
+			<a
+				href="../index.html"
+				class="border-lg my-auto p-2 transition-colors duration-200 rounded-md text-sky-500 hover:text-teal-500"
+				>N-8</a
+			>
+			<a
+				href="home.html"
+				class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500"
+				>My Projects</a
+			>
+			<div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
+			<a
+				href="numtracker.html"
+				class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500"
+				>Num Tracker</a
+			>
+			<a
+				href="todolist.html"
+				class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500"
+				>Todo List</a
+			>
+
+			<div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
+			<a target="_blank" href="https://github.com/sudo-nathan"
+				><img
+					class="bg-white rounded-full h-8 w-8 mt-2 mr-2 absolute right-0"
+					src="https://img.icons8.com/ios/50/null/github--v1.png"
+			/></a>
+		</div>
+		<div class="text-left ml-2 mt-1">
+			<i class="text-xs text-white">N-8->My Projects->Todo List</i>
+		</div>
+		<div
+			class="bg-black p-8 mt-12 ml-12 mr-12 text-white rounded-lg border-solid border-neutral-900 border-2"
+		>
+			<div class="text-lg w-full text-center">Simple Localstorage Todo List</div>
+			<div class="w-full text-center">
+				<input
+					type="text"
+					id="txtNewtodoItem"
+					placeholder="New Todo item"
+					class="rounded-md p-2 placeholder-neutral-500 mt-4 mb-4 text-white bg-neutral-900"
+				/>
+				<button
+					class="bg-neutral-900 p-2 rounded-md hover:bg-neutral-700 duration-300"
+					id="btnNewtodoItem"
+				>
+					Add New
+				</button>
+			</div>
+			<center>
+				<div id="object-todo-counter" class="mb-2">
+					<!--Code in JS-->
+				</div>
+			</center>
+
+			<center>
+				<div id="object-todo-root" class="w-72">
+					<!--Code in JS-->
+				</div>
+			</center>
+		</div>
+	</body>
+	<script src="../js/myprojects/todo.js"></script>
+</html>
