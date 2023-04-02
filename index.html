@@ -10,7 +10,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<script src="js/particles.min.js"></script>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<style>
 			button {
@@ -23,6 +23,15 @@
 
 			a:hover {
 				color: darkgray;
+			}
+			#particles-js {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-image: url("");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: 50% 50%;
 			}
 
 
@@ -71,7 +80,8 @@
 		</script>
 	</head>
 	<body class="bg-black sm:overflow-hidden">
-		<img src="./assets/moon.jpg" class="-z-10 absolute select-none" />
+		<img src="./assets/moon.jpg" class="-z-20 absolute select-none" />
+		<div id="particles-js"></div>
 		<div
 			class="h-12 w-full flex flex-row justify-start px-2 flex-wrap bg-gray-900 text-white"
 		>
@@ -148,9 +158,10 @@
 			<div/>
 			</div>
 			<div>
-				<a href="https://www.instagram.com/landipandi_photography/" target="_blank" class="absolute bottom-0 right-0 mr-12 mb-12">
+				<a href="https://www.instagram.com/landipandi_photography/" target="_blank" class="absolute bottom-0 right-0 mr-8 mb-8">
 					<img class="h-10 w-10 hover:scale-125 duration-300" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEnUlEQVR4nNVayU4jSRBNPK0GBEZsJ9B0S3MAm3vPAQkjsGEwwzc0y7BoxDI3QPADbNdRT/c/gDmzHABxYGsuSKzigKd7NgmwzIVFeqOXXWW5ylVeyoXLPCkkYxyZ8SojIiMzSogkAFAIoBPARwAHAL4CeMLz40mZa1+ZO0hbktlqRuAVgEFlsHzBvwB+o23pkngL4BD5iwMAb1KR+BHAP2YjnJycYGZmBn6/Hx6PByUlJaCaHcKxPB4PAoEAZmdn5VxJ8DeAd8lWwpDE3t4eWltbbTM6XWlsbMT29rYZmf8A/GAUEwnu9PDwgOHhYRQUFOSchFCEc4+MjODx8dGIzGdNzAD4Vf+L6+trtLS0OEZA6IQeQZsMMBifYr/qV8IJVxIppKmpCff393oiX2RqBvCz/j90J6eNFiYyOjpqtCodJPJJH9hOxoRIIbRtf5/7pAYfhBIwMeSjSwmdMEXrsEcif6l/MXc7aWBnZyfC4bCUYDCY9LdnZ2eaOBHxtRM3OyeJhMPhmGVXV1dJfzs3NxdP5IlEYuCSvRQibW1tGt/SEKmrq8vamMrKSvT19WF5eVm66t3dnRR+DoVC6O3tRUVFhaFuMBiUBCgdHR1J56mvrzcn4na7LRMoLi7G9PQ0IpEIUuH29hZTU1NSx+p8brfbnIjVQWtrazUpcWVlBf39/fKpsRhUC8KBgQGsrq5qUj11rc5rKxEaovr26ekpfD5fSp3m5uZY1qGuVTK2EaFrqCuxsbFh6vtmsbS5uSl1d3d3UVRU5BwRxoS6EpmQiCdzfn4ux5iYmHCGCI1g0BLpuJOZsMImbm5uMn4YthBhilUD2yoJVdbW1uRYPT09uSfCfYJgdsqWyOAg7zmApaWl3BNhXBBMsdkSYWq2UuvZQiQajUqd0tLSrIlwDCIajb5sImVlZXKsSCTysl3L6/U651qhUEjqsOzIlsjQ0JAca3FxMfdEWMUSrJ2yJbK+vi7H6u7udnZDZO1klQSP1uqGWF5ennsiFJbixOXlJaqrq7MqUcbHxzPWt40ICz2W4gQLQBqWrm5VVRW2trak7s7OjrNFo9CV8Xy66dxO0p0uLi6kDk+DNTU1luZ+loMVS3EVrJ1YdjCtcp+hNDQ0yOykBra6ElZJiGREsjnq0jUmJydl0KYCf8OYKCwsfJ6jbp0Nlw8sxVnFsgA8Pj6WFQCFn/kdU2ym2Ulkevng9HWQyEDa29sTiMQu6NgpctpAkaYsLCwkXNDFWgq8EHDaQJFhrafgTxLRXG2zP+i0kSKF6G8ZeX9BIn/Ef3N4eAiXy+W4scJEaJtBW+F3oTTjNWDPzmmDhYmMjY3BAO2GrTc2HvPRxXw+n1nr7bXaR/x2+o8DG4/51PTx+/1mm+0v+vY03yiAfmXYs3OyFedyuaQ7mbSnGSzf6Xvtb5Q3ChJwdHSErq6unJMIBAI4OEh4vipo6/dmbz+8MyOj7jPsFDH98QrHjosHVTiW1+uVO/b8/Ly+tZb+Kxy6ldE0SPMM+6YrYUDGBeC9khHyBV+UpJTea046Qq/ZjFc2TR4FOViuXjzjXDzkfADwUyzFmuB/oW0K1cEMbLQAAAAASUVORK5CYII=">
 				</a>
-		</div>
+			</div>
+			<script src="./js/particles.js"/>
 	</body>
 </html>
