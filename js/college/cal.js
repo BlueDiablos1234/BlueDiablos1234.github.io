@@ -1,4 +1,4 @@
-const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const d = new Date();
 let date = month[d.getMonth()];
@@ -26,7 +26,7 @@ const objects = () => {
 let dates = document.getElementById('dates');
 let value = dates.options[dates.selectedIndex].value;
 
-dates.addEventListener("change", function() {
+dates.addEventListener("change", function () {
   let value = dates.options[dates.selectedIndex].value;
   console.log("Change!");
   dateChecker(value);
@@ -35,19 +35,19 @@ const dateChecker = (value) => {
   objects();
   noass.classList.remove("hidden");
 
-  if(value==="September") {
+  if (value === "September") {
     s1.classList.remove("hidden");
     s2.classList.remove("hidden");
     s3.classList.remove("hidden");
     noass.classList.add("hidden");
   }
-  if(value==="October") {
+  if (value === "October") {
     o1.classList.remove("hidden");
     o2.classList.remove("hidden");
     o3.classList.remove("hidden");
     noass.classList.add("hidden");
   }
-  if(value==="November") {
+  if (value === "November") {
     n1.classList.remove("hidden");
     n2.classList.remove("hidden");
     n3.classList.remove("hidden");

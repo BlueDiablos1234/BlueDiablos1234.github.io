@@ -16,18 +16,18 @@ let isRunning;
 // DATE FORMAT Jan 01, 2022 00:00:00 : type = ["test", "assignment", "exam", "poe"];
 const eventData = {
   version: "V4",
-  updated_at: "27 July 2022", 
+  updated_at: "27 July 2022",
   data: [
-    ["OPSC7312", "Part 1", "Sep 04, 2022 21:00:00"],          
-    ["APPR6312", "Part 1", "Sep 14, 2022, 21:00:00"],         
+    ["OPSC7312", "Part 1", "Sep 04, 2022 21:00:00"],
+    ["APPR6312", "Part 1", "Sep 14, 2022, 21:00:00"],
     ["SQAT6312", "Take Home Test", "Sep 28, 2022, 21:00:00"],
 
     ["APPR6312", "Part 2", "Oct 14, 2022, 21:00:00"],
-    ["OPSC7312", "Part 2", "Oct 18, 2022, 21:00:00"], 
+    ["OPSC7312", "Part 2", "Oct 18, 2022, 21:00:00"],
     ["SQAT6312", "Assignment", "Oct 27, 2022, 21:00:00"],
 
     ["APPR6312", "POE", "Nov 11, 2022, 21:00:00"],
-    ["OPSC7312", "POE", "Nov 17, 2022, 21:00:00"],   
+    ["OPSC7312", "POE", "Nov 17, 2022, 21:00:00"],
     ["SQAT6312", "Take Home Exam", "Nov 21, 2022, 21:00:00"]
   ]
 };
@@ -61,19 +61,19 @@ function setTimers(arr, ind, time) { // Upcoming Timers
     var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-    sum = (days +hours+minutes+seconds)
+    sum = (days + hours + minutes + seconds)
     // Result is output to the specific element
     document.getElementById(`${ind}-da`).innerHTML = days + "d ";
     document.getElementById(`${ind}-hr`).innerHTML = hours + "h ";
-    document.getElementById(`${ind}-mn`).innerHTML  = minutes + "m ";
-    document.getElementById(`${ind}-sc`).innerHTML  = seconds + "s ";
+    document.getElementById(`${ind}-mn`).innerHTML = minutes + "m ";
+    document.getElementById(`${ind}-sc`).innerHTML = seconds + "s ";
 
 
     if (timeleft >= threedays) { // 3 days
       document.getElementById(`${ind}-indicator`).classList.add('blueind');
-    } else if(timeleft <= threedays && timeleft >= twodays) {
+    } else if (timeleft <= threedays && timeleft >= twodays) {
       document.getElementById(`${ind}-indicator`).classList.add('orangeind');
-    } else if(timeleft <= twodays) {
+    } else if (timeleft <= twodays) {
       document.getElementById(`${ind}-indicator`).classList.add('redind');
     }
     if (timeleft <= 0 || sum <= 1) {
@@ -87,22 +87,22 @@ function setMainTimer(time) {
   isRunning = true;
   var countDownDate = new Date(time).getTime();
   var mainTimer = setInterval(function () {
-  let tim = countDownDate - Date.now()
-  var timeleft = -Math.round(-tim / 1000) * 1000;
+    let tim = countDownDate - Date.now()
+    var timeleft = -Math.round(-tim / 1000) * 1000;
     if (timeleft <= 0) {
       clearInterval(mainTimer);
       isRunning = false;
       setMainObj();
       setUpcomingObj();
     }
-  
+
     updateMain(timeleft);
-    
+
     if (timeleft >= threedays) { // 3 days
       document.getElementById('time').classList.add('blue');
-    } else if(timeleft <= threedays && timeleft >= twodays) {
+    } else if (timeleft <= threedays && timeleft >= twodays) {
       document.getElementById('time').classList.add('orange');
-    } else if(timeleft <= twodays) {
+    } else if (timeleft <= twodays) {
       document.getElementById('time').classList.add('red');
     }
     // Display the message when countdown is over
@@ -110,32 +110,39 @@ function setMainTimer(time) {
 }
 
 function setMainObj(force = false, dat) {
-    eventData.data.forEach((i) => {
-      eventDate = new Date(i[2]).getTime();
-      today = new Date().getTime();
-      
-      switch(true) {
-        case(eventDate < today):
-          console.log("d<t" + i)
-          break;
-        case(eventDate >= today):
-          if (!isRunning) {
-            let date = new Date(i[2])
-            setMainTimer(eventDate);
-            courseCod.innerHTML = i[0]
-            courseDat.innerHTML = i[1]
-            activeDate.innerHTML = date.toLocaleString('en-GB', {year: 'numeric', month: 'numeric', day: 'numeric', minute: '2-digit', hour: '2-digit'});
-          };
-          break;
-      }
-    }); 
-  }
+  eventData.data.forEach((i) => {
+    eventDate = new Date(i[2]).getTime();
+    today = new Date().getTime();
+
+    switch (true) {
+      case (eventDate < today):
+        console.log("d<t" + i)
+        break;
+      case (eventDate >= today):
+        if (!isRunning) {
+          let date = new Date(i[2])
+          setMainTimer(eventDate);
+          courseCod.innerHTML = i[0]
+          courseDat.innerHTML = i[1]
+          activeDate.innerHTML = date.toLocaleString('en-GB', {
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric',
+            minute: '2-digit',
+            hour: '2-digit'
+          });
+        };
+        break;
+    }
+  });
+}
 
 function setUpcomingObj() {
   timers.forEach((i) => {
     clearInterval(i);
   })
-  let upcoming = [], upcomingParsed = []
+  let upcoming = [],
+    upcomingParsed = []
   eventData.data.map((e) => {
     date = new Date(e[2]).getTime();
     now = new Date().getTime();
@@ -150,7 +157,7 @@ function setUpcomingObj() {
     document.getElementById('upcoming').classList.add('hidden')
   }
   next = upcoming[0]
-  upcoming.slice(1,4).forEach((e, i) => {
+  upcoming.slice(1, 4).forEach((e, i) => {
     upcDate = new Date(e[2]).getTime()
     upcomingParsed.push(createCard(e, i))
     setTimers(e, i, upcDate)

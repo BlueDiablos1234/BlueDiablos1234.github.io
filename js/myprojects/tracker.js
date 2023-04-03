@@ -12,20 +12,26 @@ const dynamicContentRender = (blockName, counter) => {
   </div>`;
 }
 
-let arr =  [];
-if(localStorage.getItem("content")!==null) {
+let arr = [];
+if (localStorage.getItem("content") !== null) {
   let newItems = localStorage.getItem("content");
   arr = JSON.parse(newItems);
   console.log(arr);
 } else {
-  arr = [  
-    {blockName: "Glass of water", counter: 0}, 
-    {blockName: "Cups of Coffee", counter: 0}]
+  arr = [{
+      blockName: "Glass of water",
+      counter: 0
+    },
+    {
+      blockName: "Cups of Coffee",
+      counter: 0
+    }
+  ]
 }
 
 arr.map((item, index) => {
   document.querySelector("#object-tracker-root").insertAdjacentHTML('beforeend', dynamicContentRender(item.blockName, item.counter));
-  
+
   document.getElementById(`${item.blockName}_increment`).addEventListener('click', () => {
     item.counter++
     document.getElementById(item.blockName).innerText = item.counter
@@ -33,7 +39,7 @@ arr.map((item, index) => {
   })
 
   document.getElementById(`${item.blockName}_decrement`).addEventListener('click', () => {
-    if(item.counter>0) {
+    if (item.counter > 0) {
       item.counter--
     }
     document.getElementById(item.blockName).innerText = item.counter
@@ -52,7 +58,10 @@ const dynamicCounterRender = (blockName) => {
 document.querySelector("#object-tracker-counter").innerHTML = dynamicCounterRender(`Items Tracked: ${arr.length}`);
 
 document.getElementById("btnNewTracker").addEventListener("click", () => {
-  arr.push({blockName: document.getElementById("txtNewTracker").value, counter: 0})
+  arr.push({
+    blockName: document.getElementById("txtNewTracker").value,
+    counter: 0
+  })
   localStorage.setItem("content", JSON.stringify(arr));
   location.reload();
 })
