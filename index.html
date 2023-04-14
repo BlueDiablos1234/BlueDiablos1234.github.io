@@ -20,6 +20,16 @@
 			background-size: cover;
 			background-position: 50% 50%;
 		}
+		#particles-js2 {
+			position: absolute;
+			top: 100%;
+			width: 100%;
+			height: 100%;
+			background-image: url("");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
 	</style>
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>Main</title>
@@ -37,9 +47,9 @@
 	</script>
 </head>
 
-<body class="bg-black">
-	<img src="./assets/moon.jpg" class="-z-20 absolute select-none bg-center" />
-	<div id="particles-js" class="-z-20"></div>
+<body class="bg-black overflow-x-hidden">
+	<div style="background: url(assets/moon.jpg); background-size: cover;" class="h-screen w-screen" >
+	<div id="particles-js"></div>
 	<div class="h-12 w-full flex flex-row justify-start px-2 flex-wrap backdrop-blur-sm text-white">
 		<a href="index.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md text-sky-500 hover:text-teal-500">N-8</a>
 		<div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
@@ -114,7 +124,21 @@
 			</div>
 		</div>
 	</div>
+	</div>
 
+	<div style="background: url(assets/moon2.jpg); background-size: cover;" class="h-screen w-screen">
+		<div id="particles-js2"></div>
+		
+		<div class="flex p-12 justify-evenly text-white">
+			<div class="flex-">Work Exp</div>
+			<div class="mt-24">
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			</div>
+			<div class="mt-24">
+				BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+			</div>
+		</div>
+	</div>
 	<div>
 		<a href="https://www.instagram.com/landipandi_photography/" target="_blank" class="fixed bottom-0 right-0 mr-8 mb-8 animate-pulse">
 			<img class="h-10 w-10 hover:scale-125 duration-300" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEnUlEQVR4nNVayU4jSRBNPK0GBEZsJ9B0S3MAm3vPAQkjsGEwwzc0y7BoxDI3QPADbNdRT/c/gDmzHABxYGsuSKzigKd7NgmwzIVFeqOXXWW5ylVeyoXLPCkkYxyZ8SojIiMzSogkAFAIoBPARwAHAL4CeMLz40mZa1+ZO0hbktlqRuAVgEFlsHzBvwB+o23pkngL4BD5iwMAb1KR+BHAP2YjnJycYGZmBn6/Hx6PByUlJaCaHcKxPB4PAoEAZmdn5VxJ8DeAd8lWwpDE3t4eWltbbTM6XWlsbMT29rYZmf8A/GAUEwnu9PDwgOHhYRQUFOSchFCEc4+MjODx8dGIzGdNzAD4Vf+L6+trtLS0OEZA6IQeQZsMMBifYr/qV8IJVxIppKmpCff393oiX2RqBvCz/j90J6eNFiYyOjpqtCodJPJJH9hOxoRIIbRtf5/7pAYfhBIwMeSjSwmdMEXrsEcif6l/MXc7aWBnZyfC4bCUYDCY9LdnZ2eaOBHxtRM3OyeJhMPhmGVXV1dJfzs3NxdP5IlEYuCSvRQibW1tGt/SEKmrq8vamMrKSvT19WF5eVm66t3dnRR+DoVC6O3tRUVFhaFuMBiUBCgdHR1J56mvrzcn4na7LRMoLi7G9PQ0IpEIUuH29hZTU1NSx+p8brfbnIjVQWtrazUpcWVlBf39/fKpsRhUC8KBgQGsrq5qUj11rc5rKxEaovr26ekpfD5fSp3m5uZY1qGuVTK2EaFrqCuxsbFh6vtmsbS5uSl1d3d3UVRU5BwRxoS6EpmQiCdzfn4ux5iYmHCGCI1g0BLpuJOZsMImbm5uMn4YthBhilUD2yoJVdbW1uRYPT09uSfCfYJgdsqWyOAg7zmApaWl3BNhXBBMsdkSYWq2UuvZQiQajUqd0tLSrIlwDCIajb5sImVlZXKsSCTysl3L6/U651qhUEjqsOzIlsjQ0JAca3FxMfdEWMUSrJ2yJbK+vi7H6u7udnZDZO1klQSP1uqGWF5ennsiFJbixOXlJaqrq7MqUcbHxzPWt40ICz2W4gQLQBqWrm5VVRW2trak7s7OjrNFo9CV8Xy66dxO0p0uLi6kDk+DNTU1luZ+loMVS3EVrJ1YdjCtcp+hNDQ0yOykBra6ElZJiGREsjnq0jUmJydl0KYCf8OYKCwsfJ6jbp0Nlw8sxVnFsgA8Pj6WFQCFn/kdU2ym2Ulkevng9HWQyEDa29sTiMQu6NgpctpAkaYsLCwkXNDFWgq8EHDaQJFhrafgTxLRXG2zP+i0kSKF6G8ZeX9BIn/Ef3N4eAiXy+W4scJEaJtBW+F3oTTjNWDPzmmDhYmMjY3BAO2GrTc2HvPRxXw+n1nr7bXaR/x2+o8DG4/51PTx+/1mm+0v+vY03yiAfmXYs3OyFedyuaQ7mbSnGSzf6Xvtb5Q3ChJwdHSErq6unJMIBAI4OEh4vipo6/dmbz+8MyOj7jPsFDH98QrHjosHVTiW1+uVO/b8/Ly+tZb+Kxy6ldE0SPMM+6YrYUDGBeC9khHyBV+UpJTea046Qq/ZjFc2TR4FOViuXjzjXDzkfADwUyzFmuB/oW0K1cEMbLQAAAAASUVORK5CYII=">
