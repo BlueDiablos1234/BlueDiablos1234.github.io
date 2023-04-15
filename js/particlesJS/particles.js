@@ -11,7 +11,7 @@ particlesJS("particles-js", {
         "value": "#ffff00"
       },
       "shape": {
-        "type": "circle",
+        "type": "image",
         "stroke": {
           "width": 0,
           "color": "#000000"
@@ -20,7 +20,7 @@ particlesJS("particles-js", {
           "nb_sides": 5
         },
         "image": {
-          "src": "img/github.svg",
+          "src": "../../../assets/ic.png",
           "width": 100,
           "height": 100
         }
@@ -36,12 +36,12 @@ particlesJS("particles-js", {
         }
       },
       "size": {
-        "value": 2,
+        "value": 5,
         "random": true,
         "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
+          "enable": true,
+          "speed": 2,
+          "size_min": 0,
           "sync": false
         }
       },
@@ -105,14 +105,13 @@ particlesJS("particles-js", {
           "particles_nb": 2
         }
       }
-    },
-    "retina_detect": true
+    }
   });
 
   particlesJS("particles-js2", {
     "particles": {
       "number": {
-        "value": 160,
+        "value": 40,
         "density": {
           "enable": true,
           "value_area": 800
@@ -165,7 +164,7 @@ particlesJS("particles-js", {
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 0.1,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -182,11 +181,11 @@ particlesJS("particles-js", {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
-          "mode": "bubble"
+          "enable": false,
+          "mode": "none"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "resize": true
@@ -216,6 +215,5 @@ particlesJS("particles-js", {
           "particles_nb": 2
         }
       }
-    },
-    "retina_detect": true
+    }
   });
