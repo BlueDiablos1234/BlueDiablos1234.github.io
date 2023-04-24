@@ -14,6 +14,7 @@
 	<style>
 		#particles-js {
 			position: absolute;
+			top: 100%;
 			width: 100%;
 			height: 100%;
 			background-image: url("");
@@ -23,7 +24,6 @@
 		}
 		#particles-js2 {
 			position: absolute;
-			top: 100%;
 			width: 100%;
 			height: 100%;
 			background-image: url("");
@@ -31,6 +31,20 @@
 			background-size: cover;
 			background-position: 50% 50%;
 		}
+		body::-webkit-scrollbar {
+  		width: 4px;
+			border-radius: 12px;
+		}
+ 
+		body::-webkit-scrollbar-track {
+ 			box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		}
+ 
+		body::-webkit-scrollbar-thumb {
+  		background-color: #0284c7;
+  		outline: 1px solid #075985;
+			border-radius: 12px;
+	}
 	</style>
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>Main</title>
@@ -48,27 +62,33 @@
 	</script>
 </head>
 
-<body class="bg-black">
-	<div style="background: url(assets/moon.jpg); background-size: cover;" class="h-screen w-full m-0" >
-	<div id="particles-js"></div>
-	<div class="fixed h-12 w-full flex flex-row justify-start px-2 flex-wrap backdrop-blur-sm text-white z-50">
-		<a href="index.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md text-sky-500 hover:text-teal-500">N-8</a>
-		<div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
-		<a href="./college/calc.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">College Apps</a>
-		<a href="./projects/home.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500">My Projects</a>
-		<div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
-		<a target="_blank" href="https://github.com/sudo-nathan" class="ml-auto hover:scale-125 duration-300">
-			<i class="lab la-github text-4xl"></i>
-		</a>
+<body class="bg-black snap-mandatory snap-y">
+	<div class="h-screen bg-gradient-to-b from-black to-slate-950 snap-start" >
+		<div id="particles-js2"></div>
+		<div class="fixed h-12 w-full flex flex-row justify-start px-2 flex-wrap backdrop-blur-sm text-white z-50">
+			<a href="index.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md text-sky-500 hover:text-teal-500 shadow-xl hover:shadow-sky-500">N-8</a>
+			<div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
+			<a href="./college/calc.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500 shadow-2xl hover:shadow-sky-500">College Apps</a>
+			<a href="./projects/home.html" class="border-lg my-auto p-2 transition-colors duration-200 rounded-md hover:text-sky-500 shadow-2xl hover:shadow-sky-500">My Projects</a>
+			<div class="border border-sky-900 mt-3 mb-3 rounded-3xl"></div>
+			<a target="_blank" href="https://github.com/sudo-nathan" class="ml-auto hover:scale-125 duration-300">
+				<i class="lab la-github text-4xl hover:text-sky-500"></i>
+			</a>
+		</div>
+		<div class="rounded-md pt-12">
+			<h5 class="text-white text-center pt-4 text-xl">Welcome to Nate's Portfolio</h5>
+			<div class="text-center text-lg text-white animate-pulse">SCROLL DOWN</div>
+
+		</div>
 	</div>
-	<div class="rounded-md pt-12">
-		<h5 class="text-white text-center pt-4 text-xl">Welcome to Nate's Portfolio</h5>
+
+	<div style="background: url(assets/moon.jpg); background-size: cover;" class="h-screen w-full m-0 snap-start">
+		<div id="particles-js"></div>
 		<div class="flex">
 			<div class="">
-				<div class="mb-4 mt-12 ml-12 text-white text-lg">Study and Learning Timeline</div>
-
-				<ol class="border-l border-sky-900 dark:border-neutral-900 ml-12">
-					<li class="backdrop-blur-sm bac">
+				<div class="mb-4 mt-24 ml-6 text-white text-lg">Study and Learning Timeline</div>
+				<ol class="border-l border-sky-900 dark:border-neutral-900 ml-6">
+					<li class="backdrop-blur-sm">
 						<div class="flex-start flex items-center pt-3">
 							<div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-700 dark:bg-sky-700 animate-ping duration-1000"></div>
 							<div class="absolute -ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-950"></div>
@@ -130,26 +150,9 @@
 			</div>
 		</div>
 	</div>
-	</div>
-
-	<div style="background: url(assets/moon2.jpg); background-size: cover;" class="h-screen w-full m-0">
-		<div id="particles-js2"></div>
-		
-		<div class="text-center text-white pt-12">Work Exp</div>
-		<div class="flex flex-col p-12 justify-evenly text-white">
-			<div class="mt-24">
-				aa
-			</div>
-			<div class="mt-24">
-				bb
-			</div>
-		</div>
-	</div>
-	<div>
-		<a href="https://www.instagram.com/landipandi_photography/" target="_blank" class="fixed bottom-0 right-0 mr-8 mb-8 animate-pulse opacity-20">
-			<i class="lab la-instagram text-white text-5xl hover:scale-125 duration-300"></i>
-		</a>
-	</div>
+	<a href="https://www.instagram.com/landipandi_photography/" target="_blank" class="fixed bottom-0 right-0 mr-8 mb-8 animate-pulse opacity-50">
+		<i class="lab la-instagram text-white text-5xl hover:scale-125 duration-300 hover:text-sky-500"></i>
+	</a>
 
 	<script src="./js/particlesJS/particles.js"></script>
 </body>
