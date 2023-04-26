@@ -31,6 +31,15 @@
 			background-size: cover;
 			background-position: 50% 50%;
 		}
+		#particles-js3 {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: url("");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
 		body::-webkit-scrollbar {
   		width: 4px;
 			border-radius: 12px;
@@ -41,10 +50,13 @@
 		}
  
 		body::-webkit-scrollbar-thumb {
-  		background-color: #0284c7;
-  		outline: 1px solid #075985;
+  			background-color: #0284c7;
+  			outline: 1px solid #075985;
 			border-radius: 12px;
-	}
+		}
+		body::-webkit-scrollbar-thumb:hover {
+			background-color: #003d5c;
+		}
 	</style>
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>Main</title>
@@ -84,11 +96,11 @@
 
 	<div style="background: url(assets/moon.jpg); background-size: cover;" class="h-screen w-full m-0 snap-start">
 		<div id="particles-js"></div>
+		<div class="mb-4 pt-12 pb-12 text-white text-xl text-center">Study and Learning Timeline</div>
 		<div class="flex">
 			<div class="">
-				<div class="mb-4 mt-24 ml-6 text-white text-lg">Study and Learning Timeline</div>
 				<ol class="border-l border-sky-900 dark:border-neutral-900 ml-6">
-					<li class="backdrop-blur-sm">
+					<li class="backdrop-blur-sm hover:scale-105 duration-500">
 						<div class="flex-start flex items-center pt-3">
 							<div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-700 dark:bg-sky-700 animate-ping duration-1000"></div>
 							<div class="absolute -ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-950"></div>
@@ -109,7 +121,7 @@
 						</div>
 					</li>
 
-					<li class="backdrop-blur-sm">
+					<li class="backdrop-blur-sm hover:scale-105 duration-500">
 						<div class="flex-start flex items-center pt-3">
 							<div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-700 dark:bg-sky-700 animate-ping duration-1000"></div>
 							<div class="absolute -ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-950"></div>
@@ -130,7 +142,7 @@
 						</div>
 					</li>
 
-					<li class="backdrop-blur-sm">
+					<li class="backdrop-blur-sm hover:scale-105 duration-500">
 						<div class="flex-start flex items-center pt-3">
 							<div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-700 dark:bg-sky-700 animate-ping duration-1000"></div>
 							<div class="absolute -ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-950"></div>
@@ -149,6 +161,51 @@
 				</ol>
 			</div>
 		</div>
+	</div>
+	<div style="background: url(assets/street.jpeg); background-size: cover;" class="h-screen w-full m-0 snap-start">
+		<div id="particles-js3"></div>
+		<div class="mb-4 pt-12 pb-12 text-white text-xl text-center">Work Experience</div>
+		<div class="flex">
+			<div class="">
+				<ol class="border-l border-sky-950 ml-6">
+					<li class="backdrop-blur-sm hover:scale-105 duration-500">
+						<div class="flex-start flex items-center pt-3">
+							<div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-700 animate-ping duration-1000"></div>
+							<div class="absolute -ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-950"></div>
+							<p class="text-sm text-sky-200">
+								11/2022 - Present
+							</p>
+						</div>
+						<div class="mb-6 ml-4 mt-2 ">
+							<h4 class="mb-1.5 text-xl font-semibold text-sky-300">Fullstack Wordpress Developer - OM & Barker </h4>
+							<p class="text-sm text-neutral-300 mb-2">
+								<b>Server</b> Admin, <b>Malware</b> Removal, <b>Email</b> Management,<br>
+								<b>Wordpress</b> Front-Backend, <b>Site</b> Optimization, <b>Server</b> Maintenance.
+							</p>
+							<a href="https://ombarker.co.za/"><img src="assets/omb.png" class="h-12 bg-white rounded-md"></a>
+						</div>
+					</li>
+
+					<li class="backdrop-blur-sm hover:scale-105 duration-500">
+						<div class="flex-start flex items-center pt-3">
+							<div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-700 animate-ping duration-1000"></div>
+							<div class="absolute -ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-sky-950"></div>
+							<p class="text-sm text-sky-200">
+								06/2022 - 03/2023
+							</p>
+						</div>
+						<div class="mb-6 ml-4 mt-2">
+							<h4 class="mb-1.5 text-xl font-semibold text-sky-300">React.js Developer - Delivast</h4>
+							<p class="text-sm text-neutral-300 mb-2">
+								Javascript, API, React, Axios, MUI, NPM, Postman.
+							</p>
+							<a href="https://www.delivast.co.za/"><img src="assets/delivast.png" class="h-7 rounded-md"></a>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+
 	</div>
 	<a href="https://www.instagram.com/landipandi_photography/" target="_blank" class="fixed bottom-0 right-0 mr-8 mb-8 animate-pulse opacity-50">
 		<i class="lab la-instagram text-white text-5xl hover:scale-125 duration-300 hover:text-sky-500"></i>
