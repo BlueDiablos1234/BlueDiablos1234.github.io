@@ -16,7 +16,7 @@ body.addEventListener(('contextmenu'), e => {
 
 const play = (e) => {
     if(e.type === 'contextmenu') {
-        e.target.innerHTML='x'
+        e.target.innerText='x'
     } else {
         e.target.innerHTML='o'
     }
